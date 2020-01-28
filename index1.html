@@ -12,92 +12,102 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-2">
-        <div class="card bg-light">
-          <div class="card-header">Krispy Kream 1</div>
-          <div class="card-body">
-            <p class="card-text">Av. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample1"
-              aria-expanded="false" aria-controls="multiCollapseExample1">Info</button>
+  <div class="">
+    <div class="section">
+      <div class="row">
+        <div class="col-lg-2 scroll">
+          <div class="d-flex justify-content-center">
+            <button class="btn btn-primary m-1" type="button" onclick="showMap()">Obtener ubicación</button>
           </div>
-        </div>
-        <div class="card bg-light">
-          <div class="card-header">Krispy Kream 2</div>
-          <div class="card-body">
-            <p class="card-text">Av. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
-              aria-expanded="false" aria-controls="multiCollapseExample2">Info</button>
-          </div>
-        </div>
-        <div class="card bg-light">
-          <div class="card-header">Krispy Kream 3</div>
-          <div class="card-body">
-            <p class="card-text">Av. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3"
-              aria-expanded="false" aria-controls="multiCollapseExample3">Info</button>
-          </div>
-        </div>
-        <div class="card bg-light">
-          <div class="card-header">Krispy Kream 4</div>
-          <div class="card-body">
-            <p class="card-text">Av. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample4"
-              aria-expanded="false" aria-controls="multiCollapseExample4">Info</button>
-          </div>
-        </div>
-        <div class="card bg-light">
-          <div class="card-header">Krispy Kream 5</div>
-          <div class="card-body">
-            <p class="card-text">Av. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample5"
-              aria-expanded="false" aria-controls="multiCollapseExample5">Info</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6 map">
-        <div id="map"></div>
-      </div>
-      <div class="col-lg-4">
-        <div>
-          <div>
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim
-              </div>
+          <div class="card bg-light m-1 p-0">
+            <div class="card-header" id="nameKrispy">Krispy Kream 1</div>
+            <div class="card-body">
+              <p class="card-text">Av. Lorem ipsum dolor sit amet</p>
+              <button class="btn btn-primary btn-block" type="button" data-toggle="collapse"
+                data-target="#multiCollapseExample1" aria-expanded="false"
+                aria-controls="multiCollapseExample1">Info</button>
             </div>
           </div>
-          <div>
-            <div class="collapse multi-collapse" id="multiCollapseExample2">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim
-              </div>
+          <div class="card bg-light m-1 p-0">
+            <div class="card-header">Krispy Kream 2</div>
+            <div class="card-body">
+              <p class="card-text">Av. Lorem ipsum dolor sit amet</p>
+              <button class="btn btn-primary btn-block" type="button" data-toggle="collapse"
+                data-target="#multiCollapseExample2" aria-expanded="false"
+                aria-controls="multiCollapseExample2">Info</button>
             </div>
           </div>
-          <div>
-            <div class="collapse multi-collapse" id="multiCollapseExample3">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim
-              </div>
+          <div class="card bg-light m-1 p-0">
+            <div class="card-header">Krispy Kream 3</div>
+            <div class="card-body">
+              <p class="card-text">Av. Lorem ipsum dolor sit amet</p>
+              <button class="btn btn-primary btn-block" type="button" data-toggle="collapse"
+                data-target="#multiCollapseExample3" aria-expanded="false"
+                aria-controls="multiCollapseExample3">Info</button>
             </div>
           </div>
-          <div>
-            <div class="collapse multi-collapse" id="multiCollapseExample4">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim
-              </div>
+          <div class="card bg-light m-1 p-0">
+            <div class="card-header">Krispy Kream 4</div>
+            <div class="card-body">
+              <p class="card-text">Av. Lorem ipsum dolor sit amet</p>
+              <button class="btn btn-primary btn-block" type="button" data-toggle="collapse"
+                data-target="#multiCollapseExample4" aria-expanded="false"
+                aria-controls="multiCollapseExample4">Info</button>
             </div>
           </div>
-          <div>
-            <div class="collapse multi-collapse" id="multiCollapseExample5">
-              <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
-                anim
+          <div class="card bg-light m-1 p-0">
+            <div class="card-header">Krispy Kream 5</div>
+            <div class="card-body">
+              <p class="card-text">Av. Lorem ipsum dolor sit amet</p>
+              <button class="btn btn-primary btn-block" type="button" data-toggle="collapse"
+                data-target="#multiCollapseExample5" aria-expanded="false"
+                aria-controls="multiCollapseExample5">Info</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 map">
+          <div id="map"></div>
+        </div>
+        <div class="col-lg-3">
+          <div class="section">
+            <div class="m-1 mr-3">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                  anim
+                </div>
+              </div>
+            </div>
+            <div class="m-1 mr-3">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                  anim
+                </div>
+              </div>
+            </div>
+            <div class="m-1 mr-3">
+              <div class="collapse multi-collapse" id="multiCollapseExample3">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                  anim
+                </div>
+              </div>
+            </div>
+            <div class="m-1 mr-3">
+              <div class="collapse multi-collapse" id="multiCollapseExample4">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                  anim
+                </div>
+              </div>
+            </div>
+            <div class="m-1 mr-3">
+              <div class="collapse multi-collapse" id="multiCollapseExample5">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil
+                  anim
+                </div>
               </div>
             </div>
           </div>
@@ -106,7 +116,9 @@
     </div>
   </div>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVjrMeEdZKP6eHH012MmiibnhMk1SEEA8&callback=initMap"
+    async defer></script>
   <!--AIzaSyDOODxgbewzJMvAk-npvbVjuYQPgYEBTuY -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
