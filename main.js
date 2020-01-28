@@ -49,3 +49,24 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   infoWindow.open(map);
 }
 
+document.querySelector('#buton-get-data').addEventListener('click', getData());
+function getData(){
+  const xhttp = new XMLHttpRequest()
+  xhttp.open('GET', 'https://maps.googleapis.com/maps/api/place/textsearch/json?query=krispy+kreme&key=AIzaSyBVjrMeEdZKP6eHH012MmiibnhMk1SEEA8#', true);
+  xhttp.send();
+  xhttp.onreadystatechange = function(){
+    if(this.readyState == 4 && this.status == 200){
+      // console.log(this.responseText);
+      let data = JSON.parse(this.responseText);
+      // console.log(data);
+      let res = document.querySelector('#krispy')
+      res.innerHTML = ''
+
+      for(let item of data){
+        res.innerHTML += ` 
+        <div class="card-header" id="nameKrispy"${item.formatted_address}</div>
+        `
+      }
+    }
+  }
+}
